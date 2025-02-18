@@ -37,10 +37,11 @@ select * from customers where (cnum > 5 and (name like '%Be%' or name like '%Da'
 ```
 Note that in the last 5 commands, there are some options that have been included.
 These include:
+```
 where : like a conditional statement, only selects records that meet this criteria.  Note that you can use and/or operators and brackets for order of operations
 order by *** asc/desc : sorts the records into ascending or descending order by a specific column
 limit : sometimes there are a lot of results...Maybe you want to limit them to a smaller set.
-
+```
 Search results are retrieved and stored using the cursor.fetchall() or cursor.fetchone() commands, depending on wehther you want all results or a single record.  See the ex6.getRecords.py and sample.py files for some examples.
 
 Note: 
@@ -50,17 +51,17 @@ Assignment:
 
 Answer the following questions about NPC's from the database. They are stored in a table called _npc_
 
-What is the structure of the table?  What are the columns and what datatypes do they store?
-How many records are in the table?
-How many Knights are in the table?
-Which class has the highest number of members?
-What is the ID number of the Jester with the most gold?
-What is the total gold of the 100 wealthiest npc's in the table?
-What is the total gold of the 100 wealthiest npc's under level 5?
-What is the stats of the Bard with the highest strength?
-What is the ID number of the npc with highest total sum of their 6 primary stats?
-What percentage of all fighter classes (Barbarian, Warrior, Knight, Samurai) are Warriors?
-What is the average hitpoints per level of the npc's that are level 10 or higher?
+1. What is the structure of the table?  What are the columns and what datatypes do they store?
+2. How many records are in the table?
+3. How many Knights are in the table?
+4. Which class has the highest number of members?
+5. What is the ID number of the Jester with the most gold?
+6. What is the total gold of the 100 wealthiest npc's in the table?
+7. What is the total gold of the 100 wealthiest npc's under level 5?
+8. What is the stats of the Bard with the highest strength?
+9. What is the ID number of the npc with highest total sum of their 6 primary stats?
+10. What percentage of all fighter classes (Barbarian, Warrior, Knight, Samurai) are Warriors?
+11. What is the average hitpoints per level of the npc's that are level 10 or higher?
 
 Problem:
 Knights, Warriors, Barbarian, Samurai and Rangers have Strength as their Primary Stat
